@@ -44,6 +44,12 @@ option(BUILD_TESTS "Build test for slam course" No)
 find_package(Eigen REQUIRED)
 include_directories(${EIGEN_INCLUDE_DIR})
 message("EIGEN_INCLUDE_DIR: ${EIGEN_INCLUDE_DIR}")
+
+# ceres
+find_package(Ceres REQUIRED)
+include_directories(${CERES_INCLUDE_DIRS})
+message("CERES_INCLUDE_DIRS: ${CERES_INCLUDE_DIRS}")
+
 # opencv
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIR})
