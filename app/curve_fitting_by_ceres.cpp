@@ -62,6 +62,7 @@ int main() {
 
     // 输出最终的参数估计值
     std::cout << "Final a: " << a_true << ", b: " << b_true << ", c: " << c_true << std::endl;
+    std::cout << "Final cost: " << summary.final_cost << std::endl;
 
     return 0;
 }
